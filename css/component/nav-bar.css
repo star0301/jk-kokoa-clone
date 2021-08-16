@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f8f9;
+  padding: 15px 40px;
+  /* 이 아래 Box-Sizing: border-box는 매우 중요하다.
+  지금 이 코드가 먼지 설명할 수 없으면 모르는것. */
+  box-sizing: border-box;
+  border-top: var(--border);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn {
+  position: relative;
+}
+
+.nav__noti {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+@keyframes appearBtnAni {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__dot {
+  display: block;
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+}
+
+.nav__btn {
+  animation: appearBtnAni 1s ease-in-out;
+}
