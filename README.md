@@ -1,3 +1,3 @@
 # KoKoa Clone 2020 Update
 
-I finished all the lectures!! Thank you Nomad!!
+I finished all the lectures!!
